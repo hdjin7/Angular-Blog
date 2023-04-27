@@ -3,14 +3,13 @@
   <div class="container__small-card-content">
 
     <div class="small-card__photo">
-      <img src="https://disneyplusbrasil.com.br/wp-content/uploads/2021/07/Series-Marvel-Disney-Plus-1024x576.jpg"
-        alt="">
+      <img src="{{ photoCover }}" alt="">
     </div>
 
     <div class="small-card__title">
       <h1>
-        <a href="#">
-          Saiba mais sobre a series da Marvel.
+        <a [routerLink]="['content',id]">
+          {{ titleContent }}
         </a>
       </h1>
     </div>

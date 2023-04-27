@@ -1,22 +1,19 @@
 <div class="container__big-card">
 
   <div class="big-card__photo">
-    <img src="https://www.legiaojovem.com.br/wp-content/uploads/2019/12/Vingadores-Ultimato.jpg" alt="">
+    <img src="{{ photoCover }}" alt="">
   </div>
 
   <div class="big-card__title">
     <h1>
-      <a href="#">Nova versao do Angular</a>
+      <a [routerLink]="['content',id]">{{ titleContent }}</a>
     </h1>
   </div>
 
   <div class="big-card__description">
     <p>
-      <a href="#">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A maiores velit pariatur quisquam nobis eaque
-        quibusdam
-        molestias porro aliquam, tempora voluptate perspiciatis sequi mollitia omnis suscipit harum quos hic.
-        Temporibus.
+      <a [routerLink]="['content',id]">
+        {{ descriptionContent }}
       </a>
     </p>
   </div>
